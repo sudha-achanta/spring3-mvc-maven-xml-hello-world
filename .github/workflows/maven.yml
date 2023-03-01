@@ -17,6 +17,7 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: check the artifact
       run: |
+          pwd
           ls -ltr ./
           ls -ltr ./target/
     - name: deploy tomcat
