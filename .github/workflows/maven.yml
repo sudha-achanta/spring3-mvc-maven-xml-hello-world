@@ -18,6 +18,7 @@ jobs:
     - name: check the artifact
       run: |
           ls -ltr ./
+          ls -ltr ./target/
     - name: deploy tomcat
       run: curl -v -u admin:admin -T /home/runner/work/spring3-mvc-maven-xml-hello-world/spring3-mvc-maven-xml-hello-world/target/spring3-mvc-maven-xml-hello-world-3.0-SNAPSHOT.war 'http://52.41.100.93:8080/manager/text/deploy?path=/spring-webapp&update=true'
 
